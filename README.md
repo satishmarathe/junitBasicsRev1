@@ -1,4 +1,41 @@
-# sample with Junit5 and Mockito
+# sample with Junit5 and Mockito and Jacaco Code Coverage  - Rev #1
+
+#1 Introducing Jacoco
+We have used the details from here:
+https://www.mkyong.com/maven/maven-jacoco-code-coverage-example/
+
+#1a 
+First add the Jacoco Maven plugin 
+
+#1b
+Once we trigger the maven build 'test' phase is executed ( which is normal ).
+Under 'test' phase all of our Junits are run ( this is normal ) 
+while running Junits Java Code Coverage ( Jacoco ) will step in and measure code coverage.
+So Junits must be run to get Code Coverage.
+
+#1c
+Now we can check the code coverage report generated at 'target/site/jacoco/*'
+
+#1d
+Open the target/site/jacoco/index.html file, review the code coverage report
+
+#2 Jacoco code coverage % rule 
+This is also quite simple - by simply adding a goal ‘check’ in pom file.
+Reference :
+https://www.mkyong.com/maven/maven-jacoco-code-coverage-example/
+
+#3 Jacoco package / class exclusion 
+This is also specified in pom file - where we can specify exclusion rules.
+Reference:
+https://stackoverflow.com/questions/27799419/maven-jacoco-configuration-exclude-classes-packages-from-report-not-working
+
+
+ 
+
+
+---------------------------------------------------------------------------------------------
+# sample with Junit5 and Mockito - Rev #0
+
 Sample application with basics about .
 
 # Example 1
@@ -28,16 +65,38 @@ So here the Junit sample is exhibiting two important aspects:
 # Questions 
 
 #1 How does spring boot start - can you call the rest service ?
-a
+xxx
 
+#2 How do we Junit methods that do not return anything ( void ) ?
+
+ 
+#3 how do we Junit DAO classes ?
+ 
+#4 How do we deploy spring boot app in Weblogic ? 
+
+#5 assertions should they be in production code ?
 ---------------------------------------------------------------------------------------------
-# TODOS
-#1 To introduce Logging 
-
-#2 To introduce Code coverage 
+# GOALS
+#1 To introduce Logging  
 
 #3 Remove 'new' operator using Spring 
-a
+
+#4 Make use of testing with something something related to Spring's Mock Rest server  
+https://thepracticaldeveloper.com/2016/02/06/test-coverage-analysis-for-your-spring-boot-app/
+
+#5 Go through this course on Pluralsight
+https://www.pluralsight.com/courses/effective-testing-with-spring
+
+#7 Increase code coverage through more Unit tests and pass build
+
+#8 Introduce spring jdbc 
+
+#9 Mock DAO classes
+
+#11 Deploy spring boot application in weblogic
+
+#12 Very important role of Surefire plugin - we need to understand and use this plugin 
+	 https://blog.ccbill.com/code-coverage-with-surefire-and-jacoco/
 
 ---------------------------------------------------------------------------------------------
 # LEARNINGS
@@ -47,6 +106,20 @@ We learnt how to simulate an exception and to test with this annotation
 
 #2 Functional Interface : Executable
 We learnt that this needs to be provided as a second parameter in the assertion 'assertThrows'
+
+#3 Introducing Jacaco Code coverage into project
+We achieved this by simply adding one maven plugin !
+
+---------------------------------------------------------------------------------------------
+# DONE
+
+#2 To introduce Code coverage
+
+#6 Configure code coverage % and break build if not achieved
+
+#10 Exclude package / class from code coverage
+
+
 
 
 
