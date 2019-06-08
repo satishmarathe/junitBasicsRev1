@@ -29,10 +29,6 @@ This is also specified in pom file - where we can specify exclusion rules.
 Reference:
 https://stackoverflow.com/questions/27799419/maven-jacoco-configuration-exclude-classes-packages-from-report-not-working
 
-
- 
-
-
 ---------------------------------------------------------------------------------------------
 # sample with Junit5 and Mockito - Rev #0
 
@@ -68,7 +64,6 @@ So here the Junit sample is exhibiting two important aspects:
 xxx
 
 #2 How do we Junit methods that do not return anything ( void ) ?
-
  
 #3 how do we Junit DAO classes ?
  
@@ -86,8 +81,6 @@ https://thepracticaldeveloper.com/2016/02/06/test-coverage-analysis-for-your-spr
 
 #5 Go through this course on Pluralsight
 https://www.pluralsight.com/courses/effective-testing-with-spring
-
-#7 Increase code coverage through more Unit tests and pass build
 
 #8 Introduce spring jdbc 
 
@@ -117,7 +110,11 @@ We achieved this by simply adding one maven plugin !
 
 #6 Configure code coverage % and break build if not achieved
 
+#7 Increase code coverage through more Unit tests and pass build
+
 #10 Exclude package / class from code coverage
+
+
 
 
 
