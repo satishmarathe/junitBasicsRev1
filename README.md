@@ -76,7 +76,7 @@ xxx
 
 #3 Remove 'new' operator using Spring 
 
-#4 Make use of testing with something something related to Spring's Mock Rest server  
+#4 Make use of testing with something  related to Spring's Mock Rest server  
 https://thepracticaldeveloper.com/2016/02/06/test-coverage-analysis-for-your-spring-boot-app/
 
 #5 Go through this course on Pluralsight
@@ -90,6 +90,24 @@ https://www.pluralsight.com/courses/effective-testing-with-spring
 
 #12 Very important role of Surefire plugin - we need to understand and use this plugin 
 	 https://blog.ccbill.com/code-coverage-with-surefire-and-jacoco/
+
+#13 Learn about API Gateways
+
+#14 Learn Spring Data 
+
+#15 Learn Spring Cloud
+
+#16 Learn Docker 
+
+#17 Postman newman integration tests 
+
+#18 Soap UI Mocking 
+
+#19 Jmeter testing 
+
+#20 Profiling 
+
+
 
 ---------------------------------------------------------------------------------------------
 # LEARNINGS
